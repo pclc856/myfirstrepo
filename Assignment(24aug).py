@@ -1,5 +1,5 @@
 class FlightTable:
-    def _init_(self, pid, process, start_time, priority):
+    def __init__(self, pid, process, start_time, priority):
         self.pid = pid
         self.process = process
         self.start_time = start_time
@@ -40,5 +40,5 @@ def main():
     for item in sorted_data:
         print("{:<5} {:<10} {:<15} {:<8}".format(item.pid, item.process, item.start_time, item.priority))
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
